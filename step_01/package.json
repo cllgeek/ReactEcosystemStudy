@@ -1,0 +1,49 @@
+{
+  "name": "step_01",
+  "version": "1.0.0",
+  "description": "react_base",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "clean": "rimraf dist",
+    "build:webpack": "webpack --config webpack-pro-config.js --progress --colors",
+    "build": "npm run clean && npm run build:webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cllgeek/ReactEcosystemStudy.git"
+  },
+  "keywords": [
+    "react",
+    "es6",
+    "webpack"
+  ],
+  "author": "cllgeek",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cllgeek/ReactEcosystemStudy/issues"
+  },
+  "homepage": "https://github.com/cllgeek/ReactEcosystemStudy#readme",
+  "dependencies": {
+    "babel-polyfill": "^6.13.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-check-es2015-constants": "^6.8.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-es2015-loose": "^8.0.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "express": "^4.14.0",
+    "html-webpack-plugin": "^2.22.0",
+    "react-hot-loader": "^3.0.0-beta.5",
+    "redbox-react": "^1.3.1",
+    "rimraf": "^2.5.4",
+    "webpack": "^1.13.2",
+    "webpack-dev-middleware": "^1.8.3",
+    "webpack-hot-middleware": "^2.12.2"
+  }
+}
