@@ -29,7 +29,7 @@ step-03 是在 step-02 的基础上开发的 step-03 主要围绕添加 react-ro
 #### 克隆项目
     git clone https://github.com/cllgeek/ReactEcosystemStudy.git
 
-#### 进入目录（比如step-01)
+#### 进入目录（比如step_01)
     cd step_01
 
 #### 安装依赖
