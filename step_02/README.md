@@ -39,7 +39,7 @@ step_02 添加了 样式，字形，图片，等加载器配置。
   [React编码规范-英文原版](https://github.com/airbnb/javascript/tree/master/react)
   如果你实在不想看英文，这里是[中文版本](https://zhuanlan.zhihu.com/p/20616464?refer=FrontendMagazine)
   step-02 编码规范就是以此为标准写的。
-- 此项目应用了rem布局，具体可参考我之前写的[手机端页面自适应解决方案—rem布局](https://segmentfault.com/a/1190000004705207)
+- 此项目应用了rem布局，具体可参考我之前写的[手机端页面自适应解决方案—rem布局](http://www.jianshu.com/p/2267daf4d39d)
 
 
 ## 本模板包含step-01用到的所有包，下面将介绍 **额外** 添加的包
