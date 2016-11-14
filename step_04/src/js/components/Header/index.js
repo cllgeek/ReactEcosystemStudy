@@ -4,10 +4,10 @@ import styles from './index.scss'
 
 export default class Header extends Component {
   state = {
-    autoCity: '郑州',
+    autoCity: '广州',
     searchData: {
       cityLink: '/',
-      cityName: '郑州',
+      cityName: '广州',
       searchLink: '/',
       messageLink: '/',
       messageBool: true
@@ -27,16 +27,16 @@ export default class Header extends Component {
           <span>▼</span>
         </Link>
 
-        <Link 
-          to={searchData.searchLink} 
+        <Link
+          to={searchData.searchLink}
           className={`ver-center ${styles.center}`}
         >
           <i className={`i-4019 ${styles.search}`} />
           <span >嗖的一声</span>
         </Link>
 
-        <Link 
-          to={searchData.messageLink} 
+        <Link
+          to={searchData.messageLink}
           className={styles.right}
         >
           {searchData.messageBool && <span className={styles.tip}/>}

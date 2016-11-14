@@ -1,31 +1,32 @@
 import React,{ Component } from 'react'
-import { Header, Nav, FastNav, Title, ShopList, Message, Swipe } from '../components'
+import { Carousel } from 'antd-mobile'
+import { Header,FastNav,Message,Title,ShopList,Nav } from '../components'
 
 class Home extends Component {
   state = {
     fastNav: [
       {
-        link: "https://www.github.com",
+        link: "https://www.github.com/cllgeek",
         thumb: "http://temp.im/94x94",
         title: "大牌抢购"
       },
       {
-        link: "https://www.github.com",
+        link: "https://www.github.com/cllgeek",
         thumb: "http://temp.im/94x94",
         title: "大牌抢购"
       },
       {
-        link: "https://www.github.com",
+        link: "https://www.github.com/cllgeek",
         thumb: "http://temp.im/94x94",
         title: "大牌抢购"
       },
       {
-        link: "https://www.github.com",
+        link: "https://www.github.com/cllgeek",
         thumb: "http://temp.im/94x94",
         title: "大牌抢购"
       },
       {
-        link: "https://www.github.com",
+        link: "https://www.github.com/cllgeek",
         thumb: "http://temp.im/94x94",
         title: "大牌抢购"
       },
@@ -62,55 +63,63 @@ class Home extends Component {
     ],
     messages: [
       {
-        link: 'https://github.com/minooo',
-        desc: 'React-Study step-1 开发完成'
+        link: 'https://github.com/cllgeek/ReactEcosystemStudy',
+        desc: 'ReactEcosystemStudy step_1 开发完成'
       },{
-        link: 'https://github.com/minooo',
-        desc: 'React-Study step-2 开发完成'
+        link: 'https://github.com/cllgeek/ReactEcosystemStudy',
+        desc: 'ReactEcosystemStudy step_2 开发完成'
       },{
-        link: 'https://github.com/minooo',
-        desc: 'React-Study step-3 开发完成, 如果很长很长如果很长很长如果很长很长如果很长很长'
+        link: 'https://github.com/cllgeek/ReactEcosystemStudy',
+        desc: 'ReactEcosystemStudy step_3 开发完成, 如果很长很长如果很长很长如果很长很长如果很长很长'
+      },
+      {
+        link: 'https://github.com/cllgeek/ReactEcosystemStudy',
+        desc: 'ReactEcosystemStudy step_4 开发完成, 如果很长很长如果很长很长如果很长很长如果很长很长'
       }
 
-    ],
-    data: [
-      {
-        link: 'https://github.com/minooo',
-        thumb: 'http://temp.im/640x260/444/fff'
-      },{
-        link: 'https://github.com/minooo',
-        thumb: 'http://temp.im/640x260/444/fff'
-      },{
-        link: 'https://github.com/minooo',
-        thumb: 'http://temp.im/640x260/444/fff'
-      }
     ]
   }
 
   render() {
     const settings = {
+      dots: true,
+      autoplay: true,
+      autoplaySpeed: 3000,
       infinite: true,
-      autoplayInterval: 2000,
-      cellSpacing: 30
+      mode: 'banner',
+      initialSlide: 0,
+      afterChange: this.slideTo
     }
-
-    const { fastNav, shopLists, messages, data } = this.state
+    const { fastNav,messages,shopLists } = this.state
 
     return (
       <div>
         <Header />
-        {data && <Swipe data={data} {...settings}/>}
+        <Carousel {...settings}>
+          <div className="HomeItem">
+            <img src="http://temp.im/960x390/444/fff" className="homeImg" alt=""/>
+          </div>
+          <div className="HomeItem">
+            <img src="http://temp.im/960x390/444/fff" className="homeImg" alt=""/>
+          </div>
+          <div className="HomeItem">
+            <img src="http://temp.im/960x390/444/fff" className="homeImg" alt=""/>
+          </div>
+          <div className="HomeItem">
+            <img src="http://temp.im/960x390/444/fff" className="homeImg" alt=""/>
+          </div>
+        </Carousel>
         <div className="bg-white hor pt30">
-          {fastNav.map((item, index) =>
-            <FastNav key={index} data={item}/>
-          )}
+            {fastNav.map((item,index)=>
+                <FastNav key={index} data={item} />
+            )}
         </div>
-        <Message data={messages}/>
+        <Message data={messages} />
         <Title text="精品好店" linkName="查看全部" path="/shop" />
         <div className="plr20 bg-white">
-          {shopLists.map(item =>
-            <ShopList key={item.id} data={item} />
-          )}
+            {shopLists.map(item=>
+              <ShopList key={item.id} data={item} />
+            )}
         </div>
         <Nav />
       </div>

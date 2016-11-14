@@ -75,7 +75,7 @@ export default {
         ]
       },
       // 组件样式，需要私有化，单独配置
-      
+
       {
         test: /\.scss$/,
         include: path.resolve(__dirname, 'src/styles'),
@@ -88,7 +88,7 @@ export default {
         include: path.resolve(__dirname, 'node_modules'),
         loader: 'style!css!postcss'
       },
-      
+
       {
         test: /\.(otf|eot|svg|ttf|woff|woff2).*$/,
         loader: 'url?limit=10000'
