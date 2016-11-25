@@ -19,7 +19,7 @@
     "webpack",
     "npm"
   ],
-  "author": "minooo",
+  "author": "cllgeek",
   "license": "MIT",
   "dependencies": {
     "antd-mobile": "^0.9.5",
