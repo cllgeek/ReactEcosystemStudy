@@ -21,8 +21,10 @@ ReactEcosystemStudy 系列模板主要包含四部分
 step-02 是在 step-01的基础上添加额外配置完成的，这一部分添加了 样式，字形，图片，等加载器配置。并初步展示了在项目实践中，React技术栈的一个合理的目录结构应该是怎样的。由于应用了CSSModules以及相关的辅助插件，CSS的语法更加便利简洁，这些在项目的组件样式中都有体现。同时，也展示了在ES6下，React组件相关写法，以及标准语法的规范的推荐。总之，React带你走进组件化的美好
 - [x] [step_03](https://github.com/cllgeek/ReactEcosystemStudy/tree/master/step_03)（已完成）
 step-03 是在 step-02 的基础上开发的 step-03 主要围绕添加 react-router 进行配置，以及在react移动端开发中，强烈推荐使用antd-mobile 这个特别符合我国国情的react组件库。本模板延续组件化的思想，以及样式的模块化（cssModules), 并以真实项目实践写了几个简单的组件，包括底部导航，好店列表，以及下拉菜单等。 目的就是展示下，在真实项目中，组件化的思想是如何实践的。
-- step_04（开发中）
-同理，step_04 是在 step_03 的基础上添加额外配置完成，目前仍处于开发中，这部分主要添加 [redux](https://github.com/reactjs/redux)。推荐教程 [redux-tutorial 使用教程](https://github.com/react-guide/redux-tutorial-cn/blob/master/00_introduction.js) [redux 入门教程](http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html)
+- step_04
+同理，step_04 是在 step_03 的基础上添加额外配置完成，这部分主要添加 [redux](https://github.com/reactjs/redux)。推荐教程 [redux-tutorial 使用教程](https://github.com/react-guide/redux-tutorial-cn/blob/master/00_introduction.js) [redux 入门教程](http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html)
+- step_05 修改了些写法，升级配置
+- step_06 学习react新的特性，新的路由react16,react-router4.x和用mobx代替redux 项目地址:[react,react-router 4,mobx构建我的移动端web](https://github.com/cllgeek/geekjc-antd-mobile)
 
 ## 启动React生态圈
 本项目启动前默认你已经安装[node](http://nodejs.cn/)（建议安装6.0+版本）:smirk:
