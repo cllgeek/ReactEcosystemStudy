@@ -15,7 +15,7 @@ step_03 主要围绕添加 react-router 进行配置，以及在react移动端�
 flex(100, 1);</script>
 ```
 
-> 这是[ant-design-mobile](https://github.com/ant-design/ant-design-mobile/wiki/antd-mobile-0.8%E9%AB%98%E6%B8%85%E6%96%B9%E6%A1%88%E5%AE%9E%E8%B7%B5)的高清方案布局代码，所谓高清方案就是根据设备屏幕的`DPR`（设备像素比，又称`DPPX`，比如dpr=2时，表示1个CSS像素由4个物理像素点组成）
+> 这是[ant-design-mobile](https://github.com/ant-design/ant-design-mobile/wiki/HD)的高清方案布局代码，所谓高清方案就是根据设备屏幕的`DPR`（设备像素比，又称`DPPX`，比如dpr=2时，表示1个CSS像素由4个物理像素点组成）
 动态设置 html 的`font-size`, 同时根据设备`DPR`调整页面的缩放值，进而达到高清效果。
 
 ### 有何优势?
