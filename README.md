@@ -24,7 +24,7 @@ step-03 是在 step-02 的基础上开发的 step-03 主要围绕添加 react-ro
 - [x] step_04
 同理，step_04 是在 step_03 的基础上添加额外配置完成，这部分主要添加 [redux](https://github.com/reactjs/redux)。推荐教程 [redux-tutorial 使用教程](https://github.com/react-guide/redux-tutorial-cn/blob/master/00_introduction.js) [redux 入门教程](http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html)
 - [x] step_05 修改了些写法，升级配置
-- [] step_06 学习react新的特性，新的路由react16,react-router4.x和用mobx代替redux 项目地址:[react,react-router 4,mobx构建我的移动端web](https://github.com/cllgeek/geekjc-antd-mobile)
+- [ ] step_06 学习react新的特性，新的路由react16,react-router4.x和用mobx代替redux 项目地址:[react,react-router 4,mobx构建我的移动端web](https://github.com/cllgeek/geekjc-antd-mobile)
 
 ## 启动React生态圈
 本项目启动前默认你已经安装[node](http://nodejs.cn/)（建议安装6.0+版本）:smirk:
